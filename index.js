@@ -35,9 +35,9 @@ function postComment() {
 
 
     // var commentsDiv = document.getElementById("comments-template").innerHTML;
-    // 
+    //
     // var templateFn = _.template(commentDiv)
-    // 
+    //
     // var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter});
     // commentsDiv.innerHTML +=templateHTML
 
