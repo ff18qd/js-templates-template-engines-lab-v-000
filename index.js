@@ -28,17 +28,17 @@ function createPost() {
 
 function postComment() {
 
-    var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
+    // var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
     var comment = document.getElementById("commentText").value;
     var commenter = document.getElementById("commenterName").value;
-    document.getElementById("comments").innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter});
+    // document.getElementById("comments").innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter});
     
   
-    // var commentDiv = document.getElementById("comments-template");
+    var commentDiv = document.getElementById("comments-template");
     
     
-    // var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter});
-    // commentDiv.innerHTML +=templateHTML
+    var templateHTML = templateFn({ 'comment': comment, 'commenter': commenter});
+    commentDiv.innerHTML +=templateHTML
     
 }
 
